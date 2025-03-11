@@ -11,9 +11,14 @@ li {
 .container-big {
   margin: 0 auto;
   max-width: 1200px;
+  justify-content: flex-end;
 }
 
-/* Typo */
+.container img {
+  width: 100px;
+  height: 100px;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -30,5 +35,166 @@ header {
   left: 0;
   right: 0;
   background-color: #ff6900;
-  z-index: index 999;
+  z-index: 999;
+}
+
+header .container-big {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  gap: 20px;
+}
+
+header .container-big .header-links,
+header .container-big .header-account {
+  width: 100%;
+}
+
+header .container-big .header-logo {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+header .header-logo img {
+  width: 150px;
+}
+
+header .container-big > * {
+  padding: 30px 0px;
+}
+
+header .container-big li > a {
+  font-size: 20px;
+}
+
+.header-account .li-account {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .bar {
+  padding: 0 25px;
+}
+
+/* Main */
+main {
+  padding: 150px 0 0 0;
+}
+main .content-shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .content-shop .card {
+  width: calc(100% / 3 -10px);
+  margin: 20px 10px;
+  position: relative;
+}
+
+.card-content-img > img {
+  width: 100%;
+  display: inline-block;
+}
+
+main h2 {
+  font-size: 20px;
+}
+
+main .card-info .new-price {
+  display: inline-block;
+  margin-right: 5px;
+  color: red;
+  font-weight: bold;
+}
+
+main .old-price {
+  text-decoration: line-through;
+}
+
+main .card .card-content-img {
+  position: relative;
+}
+.content-shop .inside-box {
+  position: absolute;
+  padding: 6px 8px;
+  color: white;
+  bottom: 50px;
+  z-index: 50;
+  font-weight: bold;
+  font-size: 14px;
+}
+.content-shop .inside-box.discount {
+  background-color: red;
+}
+
+.content-shop .inside-box.sustain {
+  left: 55px;
+  background-color: green;
+}
+
+.content-shop .inside-box.sustain.last {
+  left: 0;
+  background-color: green;
+}
+
+.content-shop .add-favorities {
+  top: 20px;
+  right: 0;
+  position: absolute;
+  padding: 10px;
+  z-index: 50;
+  background-color: white;
+}
+
+.content-shop .add-favorities a {
+  color: black;
+  font-size: 25px;
+}
+.first-img {
+  z-index: 50;
+}
+
+.card-content-img {
+  position: relative;
+  width: 380px;
+}
+
+.card-content-img .first-img {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.first-img:hover {
+  opacity: 0;
+}
+
+.add-favorities a:hover {
+  color: red;
+}
+/* Footer */
+footer .container-big {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  margin-top: 50px;
+  color: white;
+  padding: 30px 0px;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid white;
+}
+
+footer .footer-list ul {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+footer .footer-list a {
+  font-size: 25px;
 }
